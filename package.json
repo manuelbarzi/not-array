@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha .",
-    "test:debug": "npx mocha debug ."
+    "test": "npx mocha *.test.js",
+    "test:debug": "npx mocha debug *.test.js"
   },
   "keywords": [],
   "author": "",
