@@ -1,14 +1,14 @@
 {
   "name": "not-array",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Simple remake of Array",
   "main": "index.js",
   "scripts": {
     "test": "npx mocha *.test.js",
     "test:debug": "npx mocha debug *.test.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["not", "array", "not-array", "remake", "simple"],
+  "author": "manuelbarzi",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",

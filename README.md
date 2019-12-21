@@ -1,18 +1,21 @@
-# Simple remake of Array
+# Simple remake of [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-## usage
+## Demo
 
 ```js
-const narray = new notArray(10)
-console.log(narray.length) // => 10
+const notArray = require('not-array')
 
-narray[0] = 'a'
-console.log(narray)  // => { '0': 'a', length: 10 }
+const array = new notArray(10)
+console.log('array length =>', array.length) // => 10
 
-narray[10] = 'b'
-console.log(narray)  // => { '0': 'a', 10: 'b', length: 11 }
+array[0] = 'a'
+console.log('array with value at index 0 =>', array)  // => { '0': 'a', length: 10 }
 
-narray.forEach(value => console.log(value)) // =>
+array[10] = 'b'
+console.log('array with value at index 10 =>', array)  // => { '0': 'a', 10: 'b', length: 11 }
+
+console.log('for-each loop to console =>')
+array.forEach((value, index) => console.log(`value at index ${index} =>`, value)) // =>
 // a
 // undefined
 // undefined
@@ -25,8 +28,8 @@ narray.forEach(value => console.log(value)) // =>
 // undefined
 // b
 
-const narray2 = narray.map((value, index) => `${index} => ${value}`)
-console.log(narray2) // => 
+const array2 = array.map((value, index) => `value at index ${index} => ${value}`)
+console.log('map loop result =>', array2) // => 
 // { '0': '0 => a',
 //   '1': '1 => undefined',
 //   '2': '2 => undefined',
