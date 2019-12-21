@@ -1,4 +1,4 @@
-# not Array
+# Simple remake of Array
 
 ## usage
 
